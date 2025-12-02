@@ -24,6 +24,7 @@ endif
 	@cp $(TEMPLATE_DIR)/lib.h day_$(DAY)/
 	@cp $(TEMPLATE_DIR)/part_1.c day_$(DAY)/
 	@cp $(TEMPLATE_DIR)/part_2.c day_$(DAY)/
+	@cp $(TEMPLATE_DIR)/.gitignore day_$(DAY)/
 	@ln -s ../$(TEMPLATE_DIR)/Makefile day_$(DAY)/Makefile
 	@echo "Fetching input for day $(DAY)..."
 	@if [ ! -d "../inputs/day_$(DAY).input" ]; then \
