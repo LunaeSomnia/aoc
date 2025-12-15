@@ -1,0 +1,6 @@
+[template]
+include = ["src/", "Cargo.toml"]
+ignore = ["README.md"]
+
+[placeholders]
+day = { prompt = "Enter your AoC day", type = "string", regex = "^[0-9]+$"}
